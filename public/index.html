@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./favicon.ico" />
+    <link href="./src/output.css" rel="stylesheet" />
+
+    <title>i love chiikawa</title>
+  </head>
+  <body>
+    <div id="app" class="max-w-[1000px] min-w-[350px] mx-auto min-h-lvh">
+      <header id="logo-wrapper">
+        <img class="py-8 mx-auto xl:w-72 lg:w-48 sm:w-36 w-28" src="./public/assets/text-logo.png" alt="chiikawa" />
+      </header>
+
+      <nav id="tag-wrapper" class="flex justify-center mx-auto mb-8">
+        <button id="all" class="c-tag" aria-label="all">
+          <img src="./public/tags/tag-all.png" alt="all" />
+        </button>
+        <button id="chiikawa" class="c-tag" aria-label="chiikawa">
+          <img src="./public/tags/tag-chiikawa.png" alt="chiikawa" />
+        </button>
+        <button id="hachiware" class="c-tag" aria-label="hachiware">
+          <img src="./public/tags/tag-hachiware.png" alt="hachiware" />
+        </button>
+        <button id="usagi" class="c-tag" aria-label="usagi">
+          <img src="./public/tags/tag-usagi.png" alt="usagi" />
+        </button>
+        <button id="momonga" class="c-tag" aria-label="momonga">
+          <img src="./public/tags/tag-momonga.png" alt="momonga" />
+        </button>
+      </nav>
+
+      <span id="tag-name-wrapper" class="p-2 bg-red-200 rounded-md c-text">&nbsp;</span>
+
+      <main
+        id="content-wrapper"
+        class="grid w-full grid-cols-1 gap-2 mb-20 xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-2"
+      >
+        <!--
+        <div class="image">
+          <img src="./public/contents/chiikawa/chiikawa-001.jpeg" alt="" />
+        </div>
+        -->
+      </main>
+
+      <div class="flex mx-auto my-20 w-80 max-h-40">
+        <div class="w-12 xl:w-24 lg:w-20 sm:w-16">
+          <img src="./public/assets/character-hachiware.png" alt="hachiware" />
+        </div>
+        <div class="mx-2 my-auto">
+          <div class="c-text">원하는 배경을 저장해서 사용해~!</div>
+          <div class="c-text">이미지는 9:16 비율에 최적화 되어 있어~!</div>
+        </div>
+      </div>
+
+      <footer class="bottom-0 left-0 w-full mt-8">
+        <img class="max-w-[1000px] mx-auto w-full" src="./public/assets/background.png" alt="chiikawa" />
+      </footer>
+    </div>
+
+    <script type="module" src="./src/index.js"></script>
+  </body>
+</html>
