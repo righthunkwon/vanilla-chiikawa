@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background: #f59bad;
+}
+
+.c-tag {
+  @apply py-2 xl:w-28 lg:w-24 sm:w-20 w-16 rounded-full hover:cursor-pointer hover:brightness-90;
+}
+
+.c-image {
+  @apply flex justify-center items-center;
+}
+
+.c-text {
+  @apply xl:text-base lg:text-base sm:text-sm text-sm text-white whitespace-nowrap;
+}
+
+.c-selected {
+  @apply brightness-50 pointer-events-none;
+}
+
+@font-face {
+  font-family: 'Ownglyph_ParkDaHyun';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2411-3@1.0/Ownglyph_ParkDaHyun.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@layer base {
+  * {
+    @apply font-Ownglyph_ParkDaHyun;
+  }
+}
