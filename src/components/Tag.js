@@ -16,6 +16,6 @@ export default function Tag({ state }) {
   const $tagNameWrapper = document.getElementById('tag-name-wrapper');
 
   this.render = () => {
-    $tagNameWrapper.innerHTML = `<span>${this.state}</span>`;
+    $tagNameWrapper.innerText = `${this.state}`;
   };
 }
